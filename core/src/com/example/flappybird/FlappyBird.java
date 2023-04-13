@@ -19,6 +19,7 @@ public class FlappyBird extends ApplicationAdapter {
 
 	Circle birdCircle;
 	BitmapFont font;
+	BitmapFont font1;
 	int FlapStates = 0;
 	int GameState = 0;
 	float velocity;
@@ -55,6 +56,9 @@ public class FlappyBird extends ApplicationAdapter {
 		font = new BitmapFont();
 		font.setColor(Color.WHITE);
 		font.getData().setScale(10);
+		font1 = new BitmapFont();
+		font1.setColor(Color.WHITE);
+		font1.getData().setScale(10);
 		batch = new SpriteBatch();
 
 		background = new Texture("background.png");
@@ -82,6 +86,7 @@ public class FlappyBird extends ApplicationAdapter {
 
 			topRectangle[i] = new Rectangle();
 			bottomRectangle[i] = new Rectangle();
+			font.setColor(Color.WHITE);
 		}
 	}
 
@@ -148,6 +153,8 @@ public class FlappyBird extends ApplicationAdapter {
 			}
 		}else if (GameState == 2){
 			batch.draw(GameOver , Gdx.graphics.getWidth() / 2 -710 , Gdx.graphics.getHeight() / 2 - GameOver.getHeight() / 2 , 1400 , 550);
+			font1.draw(batch , "Score : " + score , Gdx.graphics.getWidth() / 2 - 300, Gdx.graphics.getHeight() / 2 - GameOver.getHeight() / 2);
+			font.setColor(Color.CLEAR);
 			birdY = 0;
 			if(Gdx.input.isTouched()) {
 				GameState = 1;
