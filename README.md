@@ -18,3 +18,5 @@ To get started with the project, follow these steps:<br>
 3-Resolve Dependencies<br>
 4-Build the project<br>
 5-Run the project<br>
+
+![](images/gamescreen.jpg)
