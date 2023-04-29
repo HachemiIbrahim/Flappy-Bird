@@ -11,12 +11,6 @@ Simple tap-based controls<br>
 Scoring system to keep track of the player's progress<br>
 Game over screen with replay option<br>
 
-<h1>Project Setup</h1>
-To get started with the project, follow these steps:<br>
-1-Clone the repository to your local machine<br>
-2-Open the project in Android Studio<br>
-3-Resolve Dependencies<br>
-4-Build the project<br>
-5-Run the project<br>
+
 
 ![](images/gamescreen.jpg)
